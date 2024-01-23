@@ -5,7 +5,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package='lane_detection_test_node',  # Replace with the actual name of your ROS2 package
+            package='lane_detection_test_node',
             executable='lane_detection_test_node',
             name='lane_detection_test_node',
         ),
