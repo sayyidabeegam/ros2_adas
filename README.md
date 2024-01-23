@@ -13,13 +13,18 @@ Implementation of ADAS features with ROS2
 ## Usage
 Build package
 ```
-colcon build --packages-select lane_detector
 colcon build --packages-select lane_detection_test_node
+colcon build --packages-select lane_detection
 ```
-Run the package
+Run the package using ros2 run
 ```
 ros2 run lane_detection_test_node lane_detection_test_node
 ros2 run lane_detection lane_detection_node
+```
+Test package using launch
+```
+ros2 launch lane_detection_test_node lane_detection_test_launch.py 
+ros2 launch lane_detection lane_detection_launch.py
 ```
 ## Output
 ### Lane detection output
